@@ -8,17 +8,17 @@
   <!-- Servlets -->
   <servlet>
     <servlet-name>greetServlet</servlet-name>
-    <servlet-class>com.wuzburg.interedition.server.GreetingServiceImpl</servlet-class>
+    <servlet-class>com.wurzburg.interedition.server.GreetingServiceImpl</servlet-class>
   </servlet>
   
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/intereditiongit/greet</url-pattern>
+    <url-pattern>/interedition/greet</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->
   <welcome-file-list>
-    <welcome-file>IntereditionGit.html</welcome-file>
+    <welcome-file>Interedition.html</welcome-file>
   </welcome-file-list>
 
 </web-app>
