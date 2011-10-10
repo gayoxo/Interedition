@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="System" transaction-type="RESOURCE_LOCAL">
+		<provider>org.datanucleus.store.appengine.jpa.DatastorePersistenceProvider</provider>
+		<class>com.wurzburg.interedition.entity.Annotation</class>
+		<class>com.wurzburg.interedition.entity.AnnotationBody</class>
+		<class>com.wurzburg.interedition.entity.AnnotationConstraint</class>
+		<class>com.wurzburg.interedition.entity.AnnotationTargetInfo</class>
+		<class>com.wurzburg.interedition.entity.AnnotationTargetInstance</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="datanucleus.ConnectionURL" value="appengine" />
+			<property name="datanucleus.NontransactionalRead" value="true" />
+			<property name="datanucleus.NontransactionalWrite" value="true" />
+			<property name="datanucleus.appengine.datastoreReadConsistency"
+				value="EVENTUAL" />
+			<property name="datanucleus.appengine.storageVersion" value="WRITE_OWNED_CHILD_KEYS_TO_PARENTS" />
+		</properties>
+	</persistence-unit>
+</persistence>
