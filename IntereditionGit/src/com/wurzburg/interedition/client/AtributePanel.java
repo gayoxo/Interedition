@@ -92,4 +92,13 @@ public class AtributePanel extends Composite {
 	public void setAlmacenTemporal(Object almacenTemporal) {
 		AlmacenTemporal = almacenTemporal;
 	}
+	
+	public VerticalPanel getCamps() {
+		return Camps;
+	}
+	
+	public void addCamp(Button b)
+	{
+		Camps.add(b);
+		}
 }

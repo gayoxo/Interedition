@@ -5,6 +5,7 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.Button;
 import com.wurzburg.interedition.client.AnnotationURIs;
 import com.wurzburg.interedition.client.AtributePanel;
 import com.wurzburg.interedition.client.BotonSpecialAnnot;
@@ -71,6 +72,16 @@ public class Factory {
 			AP.addCamp(AnnotationBodyNameLabels.content, AA.getContent());
 			AP.addCamp(AnnotationBodyNameLabels.createdDate, AA.getCreatedDate());
 			AP.addCamp(AnnotationBodyNameLabels.updatedDate, AA.getUpdatedDate());
+			Button B = new Button(AnnotationBodyNameLabels.render2Text);
+			B.addClickHandler(new ClickHandler() {
+				
+				@Override
+				public void onClick(ClickEvent event) {
+					Window.alert("Not implemented yet");
+					
+				}
+			});
+			AP.addCamp(B);
 		
 			return AP;
 			
@@ -94,6 +105,17 @@ public class Factory {
 			AP.addCamp(AnnotationTargetNameLabels.context, AA.getContext());
 			AP.addCamp(AnnotationTargetNameLabels.createdDate, AA.getCreatedDate());
 			AP.addCamp(AnnotationTargetNameLabels.updatedDate, AA.getUpdatedDate());
+			Button B=new Button(AnnotationTargetNameLabels.validate);
+			B.addClickHandler(new ClickHandler() {
+				
+				@Override
+				public void onClick(ClickEvent event) {
+					Window.alert("Not implemented yet");
+					
+				}
+			});
+			AP.addCamp(B);
+		
 			return AP;
 		}else
 			return null;

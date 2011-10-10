@@ -2,8 +2,11 @@ package com.wurzburg.interedition.client.factoria;
 
 import javax.persistence.Basic;
 
+import com.google.gwt.safehtml.shared.SafeHtml;
+
 public class AnnotationTargetNameLabels {
 
+	
 	public static String titleTarget = "Annotation Target";
 	public static String titleConstraint = "Annotation Constraints";
 	//Info
@@ -15,4 +18,5 @@ public class AnnotationTargetNameLabels {
 	public static String context="context";
 	public static String createdDate="Created at";
 	public static String updatedDate= "Updated at";
+	public static String validate = "Validate Constrains";
 }

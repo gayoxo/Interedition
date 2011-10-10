@@ -14,5 +14,7 @@ public class AnnotationBodyNameLabels {
 	public static String updatedDate = "Updated At";
 	
 	public static String content = "Content";
-
-}
+	
+	public static String render2Text= "Render";
+	
+			}
