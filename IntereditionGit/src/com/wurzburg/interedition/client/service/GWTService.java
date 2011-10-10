@@ -6,6 +6,8 @@ package com.wurzburg.interedition.client.service;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+import com.wurzburg.interedition.client.entity.Annotation;
+
 import java.util.ArrayList;
 
 
@@ -16,11 +18,9 @@ import java.util.ArrayList;
 @RemoteServiceRelativePath("book.reader/gwtservice")
 public interface GWTService extends RemoteService {
 
-	/**
-	 * 
-	 * @gwt.typeArgs bookId <java.lang.String>
-	 * @gwt.typeArgs <org.yournamehere.client.Annotation>
-	 */
+	public Annotation getAnnotationByURI(String annotationURI);
 	
+	public ArrayList<String> getAnnotationsURI(String targetURI);
 
+	
 }
